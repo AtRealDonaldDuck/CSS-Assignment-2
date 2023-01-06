@@ -15,91 +15,86 @@
         <h1 class="text-center">Build-A-Bass</h1>
         <p class="text-center">we also do guitars!</p>
         <nav class="nav border-top border-1 border-dark">
-            <a href="" class="nav-link">1</a>
-            <a href="" class="nav-link">2</a>
-            <a href="" class="nav-link">3</a>
+            <a href="" class="nav-link">Home</a>
+            <a href="" class="nav-link">Gallery</a>
+            <a href="" class="nav-link">Contact us</a>
         </nav>
     </div>
     <div class="container">
         <div class="row row-cols-2 g-2">
-            <form>
-                <div class="d-flex justify-content-between">
-                    <label>Body</label>
-                    <div class="w-75">
-                        <input type="button" class="btn border border-2 border-dark">
-                        <select class="form-select-sm">
-                            <option value="1">Fender Classic</option>
-                            <option value="2">Fender Shredder</option>
+            <div class="col">
+                <form id="CustomizationOptions">
+                    <div>
+                        <label class="col-3">Body</label>
+                        <button class="btn border border-2 border-dark"></button>
+                        <select class="form-select-sm col-7">
+                            <option disabled selected hidden value="placeholder" >chose a body</option>
+                            <option value="FenderClassic">Fender Classic</option>
+                            <option value="FenderShredder">Fender Shredder</option>
                         </select>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <label>Neck</label>
-                    <div class="w-75">
-                        <input type="button" class="btn border border-2 border-dark">
-                        <select class="form-select-sm">
-                            <option value="1">Maple on Oak</option>
-                            <option value="2">Spruce</option>
+                    <div>
+                        <label class="col-3">Neck</label>
+                        <select class="form-select-sm col-7">
+                            <option disabled selected hidden value="placeholder" >chose a neck</option>
+                            <option value="MapleOnOak">Maple on Oak</option>
+                            <option value="Spruce">Spruce</option>
                         </select>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <label>Fretted</label>
-                    <div class="w-75">
+                    <div>
+                        <label class="col-3">Fretted</label>
                         <input type="checkbox" class="form-check-input border border-2">
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <label>Frets</label>
-                    <div class="w-75">
-                        <select class="form-select-sm">
-                            <option value="1">Resin Ivory</option>
-                            <option value="2">Resin Metallic</option>
+                    <div>
+                        <label class="col-3">Frets</label>
+                        <select class="form-select-sm col-7">
+                            <option disabled selected hidden value="placeholder">chose a fret style</option>
+                            <option value="ResinIvory">Resin Ivory</option>
+                            <option value="ResinMetallic">Resin Metallic</option>
+                            <option value="None">None</option>
                         </select>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <label>Strings</label>
-                    <div class="w-75">
-                        <input type="button" class="btn border border-2 border-dark">
-                        <select class="form-select-sm">
-                            <option value="1">Nickel</option>
-                            <option value="2">Copper</option>
+                    <div>
+                        <label class="col-3">Strings</label>
+                        <button class="btn border border-2 border-dark"></button>
+                        <select class="form-select-sm col-7">
+                            <option disabled selected hidden value="placeholder" >chose your Strings</option>
+                            <option value="None">None</option>
+                            <option value="Nickel">Nickel</option>
+                            <option value="Copper">Copper</option>
+                            <option value="Coloured">Coloured</option>
                         </select>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <label>Gauge</label>
-                    <div class="w-75">
-                        <select class="form-select-sm">
-                            <option value="1">0.010-0.047</option>
-                            <option value="2">0.015-0.050</option>
+                    <div>
+                        <label class="col-3">Gauge</label>
+                        <select class="form-select-sm col-7">
+                            <option disabled selected hidden value="placeholder" >pick a gauge</option>
+                            <option value="Light">Light(0.010-0.047)</option>
+                            <option value="Medium">Medium(0.015-0.050)</option>
                         </select>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <label>Strap</label>
-                    <div class="w-75">
-                        <input type="button" class="btn border border-2 border-dark">
-                        <select class="form-select-sm">
-                            <option value="1">Thick Stitch</option>
-                            <option value="2">Leather</option>
-                            <option value="3">Half-and-Half</option>
+                    <div>
+                        <label class="col-3">Strap</label>
+                        <button class="btn border border-2 border-dark"></button>
+                        <select class="form-select-sm col-7">
+                            <option disabled selected hidden value="placeholder" >chose a material</option>
+                            <option value="Thick">Thick Stitch</option>
+                            <option value="Leather">Leather</option>
+                            <option value="Half-and-Half">Half-and-Half</option>
                         </select>
                     </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <label>Label</label>
-                    <div class="w-75">
-                        <input type="text" placeholder="*Enter Text*" class="form-control-sm border border-2">
+                    <div>
+                        <label class="col-3">Text</label>
+                        <input type="text" placeholder="*Enter Text*" class="form-control-sm border border-dark col-7">
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
             <div class="col">
+                <img src="img_527793.png" width="40px" height="40px">
                 <img src="1_Team-Fortress-2-how-to-excel-at-the-teamless-defense-fortress-2-steamsplay-com.gif">
                 <img src="technoblade-a6d.gif">
                 <br>
-                <input type="button" value="Order">
+                <button onclick="ValidateAndCalculate()">Order</button>
             </div>
         </div>
     </div>
