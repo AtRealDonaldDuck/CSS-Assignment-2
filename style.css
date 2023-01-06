@@ -1,0 +1,9 @@
+.box{
+    border-radius: 1;
+    border-style: solid;
+    border-color: blue;
+
+    background-color: aqua;
+
+    min-height: 40px;
+}
