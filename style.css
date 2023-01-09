@@ -1,3 +1,17 @@
+input[type='color']{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 0px;
+}
+input[type="color"]::-webkit-color-swatch {
+    border-radius: 50%;
+}
+
+body{
+    background-color: lightgray;
+}
+
 .box{
     border-radius: 1;
     border-style: solid;
@@ -6,4 +20,16 @@
     background-color: aqua;
 
     min-height: 40px;
+}
+
+.sub{
+    display: none;
+    margin-left: 5%;
+    background-color: gray;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 20px;
+    background: #d0d0d0;
 }
