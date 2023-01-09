@@ -15,7 +15,7 @@
         <h1 class="text-center">Build-A-Bass</h1>
         <p class="text-center">we also do guitars!</p>
         <nav class="nav border-top border-1 border-dark">
-            <a href="" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
             <a href="" class="nav-link">Gallery</a>
             <a href="ContactPage.html" class="nav-link">Contact us</a>
         </nav>
@@ -32,13 +32,13 @@
             <br>
             <label for="phoneNumber">Contact number</label>
             <br>
-            <input type="number" placeholder="Your contact number.." id="phoneNumber" class="form-control">
+            <input type="text" placeholder="Your contact number.." id="phoneNumber" class="form-control" maxlength="8" oninput="restrictToNumbers(this)">
             <br>
             <label for="comment">Comment</label>
             <br>
             <textarea placeholder="Write your comment here.." id="comment" cols="30" rows="6" class="form-control"></textarea>
             <br>
-            <input type="send" value="submit" class="btn btn-primary" onclick="ValidateForm(this.parentElement)">
+            <input type="submit" value="submit" class="btn btn-primary" onclick="ValidateForm(this.parentElement)">
             <input type="reset" value=":REDO EMOJI:" class="btn btn-primary" style="float: right;">
         </form>
     </div>

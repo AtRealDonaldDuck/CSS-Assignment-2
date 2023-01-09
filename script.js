@@ -44,7 +44,7 @@ function ValidateForm(form){
     var error = false;
     var inputs = form.querySelectorAll('.form-control');
     inputs.forEach(input => {
-        if(input.value == ''){
+        if(input.value == '' || (input.id='phoneNumber' && input.value.length != 8)){
             input.style.borderColor = 'red';
             error = true;
         }else{
@@ -55,4 +55,9 @@ function ValidateForm(form){
     if (error) {
         alert("ALL inputs are mandatory,please ammend your entries and try again");
     }
+}
+
+function restrictToNumbers(element){
+    var text = element.value;
+    element.value = text.replace(/\D/g,'');
 }
