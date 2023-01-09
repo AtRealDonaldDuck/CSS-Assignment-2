@@ -11,13 +11,29 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div class="border-bottom border-1 border-dark">
+    <div>
         <h1 class="text-center">Build-A-Bass</h1>
         <p class="text-center">we also do guitars!</p>
-        <nav class="nav border-top border-1 border-dark">
-            <a href="" class="nav-link">Home</a>
-            <a href="" class="nav-link">Gallery</a>
-            <a href="ContactPage.html" class="nav-link">Contact us</a>
+        
+        <nav class="nav border-top border-1 border-light bg-dark d-none d-md-flex">
+            <a href="index.html" class="nav-link text-light">Home</a>
+            <a href="gallery.html" class="nav-link text-light">Gallery</a>
+            <a href="ContactPage.html" class="nav-link text-light">Contact us</a>
+        </nav>
+
+        <nav class="navbar navbar-dark bg-dark d-md-none d-sm-flex">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse bg-dark" id="navbarToggleExternalContent" >
+                <div style="margin-left: 40px;">
+                    <a href="index.html" class="nav-link text-light">Home</a>
+                    <a href="gallery.html" class="nav-link text-light">Gallery</a>
+                    <a href="ContactPage.html" class="nav-link text-light">Contact us</a>
+                </div>
+            </div>
         </nav>
     </div>
     <div class="container">
