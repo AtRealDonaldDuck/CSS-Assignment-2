@@ -42,7 +42,7 @@ function ValidateForm(form){
     var error = false;
     var inputs = form.querySelectorAll('.form-control');
     inputs.forEach(input => {
-        if(input.value == ''){
+        if(input.value == '' || (input.id='phoneNumber' && input.value.length != 8)){
             input.style.borderColor = 'red';
             error = true;
         }else if (input.id == 'phoneNumber' && input.value.length != 8) {
